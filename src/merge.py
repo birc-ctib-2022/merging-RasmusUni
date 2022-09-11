@@ -29,9 +29,9 @@ def merge(x: list[int], y: list[int]) -> list[int]:
             j+=1
     
     if i < len(x):
-        z=z+x
+        z=z+x[i:]
     else:
-        z=x+y 
+        z=x+y[j:] 
 
     # FIXME: you shouldn't just break here
     # At least one of the lists is empty now. Copy the
